@@ -7,7 +7,7 @@ require_once "logincheck.php";
 <?php
 // $link = new mysqli("localhost", "coacteh9_coact", "Coact@2020#", "aag");
 $link = new mysqli("localhost", "root", "", "aag");
-  $doctors_id     = mysqli_real_escape_string($link, $_POST['doctors_id']);
+  // $doctors_id     = mysqli_real_escape_string($link, $_POST['doctors_id']);
   // $user_name     = mysqli_real_escape_string($link, $_POST['name']);
   // $user_mob     = mysqli_real_escape_string($link, $_POST['mobnum']);
   // $user_loc     = mysqli_real_escape_string($link, $_POST['location']);
