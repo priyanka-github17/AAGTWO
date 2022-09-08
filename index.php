@@ -47,9 +47,9 @@ if (isset($_POST['loginuser-btn'])) {
    
       <div class="right-area-wrapper">
       
-        <div class="row mt-3 p-3">
+      <div class="row mt-1 p-2 pt-1">
           <div class="col-12">
-          To login, please enter your registered mobile number:
+          To login, please enter your registered Email ID:
             <?php
             if (count($errors) > 0) : ?>
               <div class="alert alert-danger alert-msg">
@@ -65,9 +65,9 @@ if (isset($_POST['loginuser-btn'])) {
             
             <form action="" method="post">
               <div class="form-group">
-                <input type="text" name="emailid" id="emailid" class="input" placeholder="Enter your Mobile Number" value="<?= $emailid?>">
+                <input type="text" name="emailid" id="emailid" class="input" placeholder="Enter your Email ID" value="<?= $emailid?>">
               </div>
-              <div class="form-group">
+              <div class="form-group mb-0">
                 <input type="submit" name="loginuser-btn" id="btnLogin" class="form-submit btn-login" value="Login" />
               </div>
             </form>

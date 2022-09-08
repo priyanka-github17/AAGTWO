@@ -321,12 +321,12 @@ $curr_room = 'pretest_module1';
         }
 
         .option_list {
-            font-size: 3vmin;
+            font-size: 3.5vmin;
             padding: 32px 17px;
         }
 
         .quiz_container .quiz_text h1 {
-            font-size: 3rem;
+            font-size: 4rem;
 
         }
 
@@ -335,7 +335,11 @@ $curr_room = 'pretest_module1';
         }
 
         .btn {
-            font-size: 3vmin;
+            font-size: 4vmin;
+        }
+
+        .center{
+            font-size: 4vmin;
         }
 
         /* .btn2 {
@@ -357,7 +361,7 @@ $curr_room = 'pretest_module1';
         }
 
         .score span {
-            font-size: 3vmin;
+            font-size: 5vmin;
         }
 
         .start #start_quiz {
@@ -365,11 +369,11 @@ $curr_room = 'pretest_module1';
         }
 
         .result_box{
-            width:600px;
+            width:860px;
     
         }
         .btn{
-            font-size:2vmin;
+            font-size:3vmin;
             font-weight:bold;
         }
 
@@ -440,43 +444,43 @@ $curr_room = 'pretest_module1';
 	  			 <a href="../module1.php"  class="a" >Video <i class="fa fa-arrow-right"></i></a> <!--href="../module1.php" onclick="Redirectmod1()"-->
 				 <a href="posttest1.php" class="a"  >Post-test <i class="fa fa-arrow-right"></i></a>   <!--href="posttest1.php" onclick="Redirectmod11()"-->
 	  		</div>
-			  <input class="dropdown-sub1" type="checkbox" id="dropdown-sub1" name="dropdown-sub1"/>
+			    <!-- <input class="dropdown-sub1" type="checkbox" id="dropdown-sub1" name="dropdown-sub1"/>
 		  	<label class="for-dropdown-sub1" for="dropdown-sub1">Module 2 <i class="fa fa-plus"></i></label>
 	  		<div class="section-dropdown-sub1"> 
-	  		<a href="pretest2.php" class="a"  >Pre-test <i class="fa fa-arrow-right"></i></a>	<!--  onclick="Redirect()" -->
-	  			 <a href="../module2.php" class="a" >Video <i class="fa fa-arrow-right"></i></a>  <!--href="../module2.php" onclick="Redirect00()"-->
-				  <a href="posttest2.php" class="a" >Post-test <i class="fa fa-arrow-right"></i></a> <!--href="posttest2.php" onclick="Redirect01()"-->
+	  		<a href="pretest2.php" class="a"  >Pre-test <i class="fa fa-arrow-right"></i></a>	
+	  			 <a href="../module2.php" class="a" >Video <i class="fa fa-arrow-right"></i></a> 
+				  <a href="posttest2.php" class="a" >Post-test <i class="fa fa-arrow-right"></i></a> 
 	  		</div>
 			  <input class="dropdown-sub2" type="checkbox" id="dropdown-sub2" name="dropdown-sub2"/>
 		  	<label class="for-dropdown-sub2" for="dropdown-sub2">Module 3 <i class="fa fa-plus"></i></label>
 	  		<div class="section-dropdown-sub2"> 
-	  			<a href="pretest3.php" class="a"  >Pre-test <i class="fa fa-arrow-right"></i></a><!--onclick="Redirect_one()" -->
-	  			<a href="../module3.php" class="a" >Video <i class="fa fa-arrow-right"></i></a> <!-- ../module3.php onclick="Redirect10()-->
-				  <a href="posttest3.php" class="a" >Post-test <i class="fa fa-arrow-right"></i></a>  <!--posttest3.php onclick="Redirect11()"-->
+	  			<a href="pretest3.php" class="a"  >Pre-test <i class="fa fa-arrow-right"></i></a>
+	  			<a href="../module3.php" class="a" >Video <i class="fa fa-arrow-right"></i></a> 
+				  <a href="posttest3.php" class="a" >Post-test <i class="fa fa-arrow-right"></i></a>  
 	  		</div>
 
 			  <input class="dropdown-sub3" type="checkbox" id="dropdown-sub3" name="dropdown-sub3"/>
 		  	<label class="for-dropdown-sub3" for="dropdown-sub3">Module 4 <i class="fa fa-plus"></i></label>
 	  		<div class="section-dropdown-sub3"> 
-	  			<a href="pretest4.php" class="a" >Pre-test <i class="fa fa-arrow-right"></i></a>  <!-- onclick="Redirect_two()" -->
-	  			 <a href="../module4.php" class="a" >Video <i class="fa fa-arrow-right"></i></a> <!--../module4.php onclick="Redirect20()" -->
-				 <a href="posttest4.php" class="a" >Post-test <i class="fa fa-arrow-right"></i></a> <!-- posttest4.php onclick="Redirect21()"-->
-	  		</div>
+	  			<a href="pretest4.php" class="a" >Pre-test <i class="fa fa-arrow-right"></i></a> 
+	  			 <a href="../module4.php" class="a" >Video <i class="fa fa-arrow-right"></i></a> 
+				 <a href="posttest4.php" class="a" >Post-test <i class="fa fa-arrow-right"></i></a> 
+	  		</div> -->
 
-			  <input class="dropdown-sub4" type="checkbox" id="dropdown-sub4" name="dropdown-sub4"/>
+			  <!-- <input class="dropdown-sub4" type="checkbox" id="dropdown-sub4" name="dropdown-sub4"/>
 		  	<label class="for-dropdown-sub4" for="dropdown-sub4">Module 5 <i class="fa fa-plus"></i></label>
 	  		<div class="section-dropdown-sub4"> 
-	  			<a href="pretest5.php" class="a" >Pre-test <i class="fa fa-arrow-right"></i></a> <!--onclick="Redirect_three()" -->
-	  			 <a href="../module5.php" class="a" >Video <i class="fa fa-arrow-right"></i></a> <!--../module5.php onclick="Redirect30()" -->
-				   <a href="posttest5.php" class="a" >Post-test <i class="fa fa-arrow-right"></i></a><!-- posttest5.php  onclick="Redirect31()"-->
+	  			<a href="pretest5.php" class="a" >Pre-test <i class="fa fa-arrow-right"></i></a> 
+	  			 <a href="../module5.php" class="a" >Video <i class="fa fa-arrow-right"></i></a> 
+				   <a href="posttest5.php" class="a" >Post-test <i class="fa fa-arrow-right"></i></a>
 	  		</div>
 			  <input class="dropdown-sub5" type="checkbox" id="dropdown-sub5" name="dropdown-sub5"/>
 		  	<label class="for-dropdown-sub5" for="dropdown-sub5">Module 6 <i class="fa fa-plus"></i></label>
 	  		<div class="section-dropdown-sub5"> 
-	  			<a href="pretest6.php"class="a" >Pre-test <i class="fa fa-arrow-right"></i></a> <!--onclick="Redirect_four()"-->
-	  			<a href="../module6.php" class="a" >Video <i class="fa fa-arrow-right"></i></a> <!-- ../module6.php onclick="Redirect40()"-->
-				  <a href="posttest6.php" class="a" >Post-test <i class="fa fa-arrow-right"></i></a> <!--posttest6.php onclick="Redirect41()"-->
-	  		</div>
+	  			<a href="pretest6.php"class="a" >Pre-test <i class="fa fa-arrow-right"></i></a>
+	  			<a href="../module6.php" class="a" >Video <i class="fa fa-arrow-right"></i></a> 
+				  <a href="posttest6.php" class="a" >Post-test <i class="fa fa-arrow-right"></i></a> 
+	  		</div> -->
   			<!-- <a href="#">Dropdown 2 <i class="fa fa-arrow-right"></i></a>
   			<a href="#">Dropdown 2 <i class="fa fa-arrow-right"></i></a> -->
   		</div>

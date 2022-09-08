@@ -159,7 +159,7 @@ if (isset($_POST['reguser-btn'])) {
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/jquery-ui.css" />
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styless.css">
 </head>
 
 <body>
@@ -167,7 +167,7 @@ if (isset($_POST['reguser-btn'])) {
     <div class="container bg-white reg-content">
         <div class="row">
             <div class="col-12 p-0">
-                <img src="assets/img/reg-banner.png" class="img-fluid" alt="">
+                <img src="assets/img/AAG V Connect Banner 1960 X 1080 px new1.png" class="img-fluid" alt="">
             </div>
         </div>
 
@@ -194,46 +194,54 @@ if (isset($_POST['reguser-btn'])) {
                 <form method="POST">
                     <div class="row mt-2">
                      
-                        <div class="col-12 col-md-12">
+                        <div class="col-12 col-md-6">
                             <label>First Name<sup class="req">*</sup></label>
                             <input type="text" id="fname" name="fname" class="input" value="<?php echo $fname; ?>" autocomplete="off">
                         </div>
-                        <div class="col-12 col-md-12">
+                        <div class="col-12 col-md-6">
                             <label>Last Name<sup class="req">*</sup></label>
                             <input type="text" id="lname" name="lname" class="input" value="<?php echo $lname; ?>" autocomplete="off">
                         </div>
                     </div>
                  
                     <div class="row mt-3 mb-1">
-                        <div class="col-12 col-md-12">
+                        <div class="col-12 col-md-6">
                             <label>Email ID<sup class="req">*</sup></label>
                             <input type="email" id="emailid" name="emailid" class="input" value="<?php echo $emailid; ?>" autocomplete="off">
                         </div>
-                        <div class="col-12 col-md-12">
+                        <div class="col-12 col-md-6">
                             <label>Phone No.<sup class="req">*</sup></label>
                             <input type="number" id="mobile" name="mobile" class="input" value="<?php echo $mobile; ?>" autocomplete="off" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
                         </div>
                     </div>
                     <div class="row mt-3 mb-1">
-                        <div class="col-12 col-md-12">
+                        <div class="col-12 col-md-6">
                             <label>State Medical Council<sup class="req">*</sup></label>
                             <input type="text" id="pincode" name="pincode" class="input" value="<?php echo $pincode; ?>" autocomplete="off" maxlength="10">
                         </div>
-                        <div class="col-12 col-md-12">
+                        <div class="col-12 col-md-6">
                             <label>State Medical Register Number<sup class="req">*</sup></label>
                             <input type="text" id="specialty" name="specialty" class="input" value="<?php echo $specialty; ?>" autocomplete="off" maxlength="10" oninput="">
                         </div>
-                        <div class="col-12 col-md-12">
+                        
+                    </div>
+                    <div class="row mt-3 mb-1">
+                        
+                   
+                        <div class="col-12 col-md-6">
                             <label>Name of the council <sup class="req">*</sup></label>
                             <input type="text" id="updates" name="updates" class="input" value="<?php echo $updates; ?>" autocomplete="off" maxlength="10" oninput="">
                         </div>
+                        <div class="col-12 col-md-6">
+                            
+                            </div>
                     </div>
                     <div class="row mt-2 mb-3">
                         <div class="col-12 col-md-12">
                             <!-- <small><sup class="req">*</sup> denotes mandatory fields.</small><br><br> -->
                             <input type="hidden" id="app" name="app" value="0">
-                            <input type="submit" name="reguser-btn" id="btnSubmit" class="form-submit btn-register" value="Submit" />
-                            <!-- <a href="./" class="form-cancel"><img src="assets/img/cancel-btn.jpg" alt="" /></a> -->
+                            <input type="submit" name="reguser-btn" id="btnSubmit" class="form-submit btn-register" value="" />
+                            <a href="./" class="form-cancel"><img src="assets/img/cancel-btn.jpg" alt="" /></a>
                         </div>
 
                     </div>

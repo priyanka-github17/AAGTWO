@@ -392,7 +392,7 @@ $curr_room = 'lobby';
                             <li class="nav-item">
                                 <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Module 1</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Module 2</a>
                             </li>
                             <li class="nav-item">
@@ -406,7 +406,7 @@ $curr_room = 'lobby';
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-6">Module 6</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <div class="col-lg-9">
@@ -643,7 +643,7 @@ $curr_room = 'lobby';
                     <div class="col-lg-3 col-md-6">
                         <div class="count-box">
                             <i class="fas fa-file-video"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
                             <p>Live Modules</p>
                         </div>
                     </div>

@@ -1,30 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
 html,
 body {
-    /* height: 100%; */
+    height: 100%;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    /* background-image: url(../img/INTEGRACE.jpg); */
-    /* background-image:linear-gradient(#155091, transparent); */
-    background-color: #124f8e;
+    background-image: url(../img/bg.jpg);
     background-attachment: fixed;
     background-position: left top;
     background-size: cover;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
 }
 
 body.no-bg,
@@ -51,9 +37,8 @@ a:hover {
 .right-area-wrapper {
     background-color: #fff;
     width: 100%;
-    margin-top: 12px;
     /* height: 100%; */
-    border-radius: 30px;
+    border-radius: 8px;
     padding: 10px;
 }
 
@@ -77,7 +62,6 @@ a:hover {
     color: #6f6f6f;
     text-align: center;
 }
-
 #code {
     position: fixed;
     bottom: 50px;
@@ -86,9 +70,7 @@ a:hover {
     font-size: 0.75em;
     color: #fff;
 }
-
-
-/* #mobile-portrait {
+#mobile-portrait {
     position: fixed;
     top: 0;
     left: 0;
@@ -97,7 +79,7 @@ a:hover {
     background-color: #fff;
     z-index: 999999;
     display: none;
-} */
+}
 
 .center-device {
     position: absolute;
@@ -114,12 +96,14 @@ a:hover {
         height: 50px !important;
     }
     #content #bottom-menu ul li a {
+        
         padding: 5px !important;
     }
     #content #bottom-menu .ml-auto {
         margin-left: 5px !important;
     }
     #helpline {
+        
         right: 10px !important;
     }
 }
@@ -200,29 +184,22 @@ form #btnLogin {
     text-align: center;
     color: #fff;
 }
-
 .visit {
     margin-top: 10px;
     overflow-wrap: break-word;
 }
-
 .bor-right {
     border-right: 2px solid #b6b6b8;
 }
-
 .bor-left {
     border-left: 2px solid #b6b6b8;
 }
-
 .color-grey {
     color: #808183;
 }
-
 .link {
     color: #c00;
 }
-
-
 /* Customization Style of SyoTimer */
 
 .syotimer {
@@ -515,6 +492,8 @@ form #btnLogin {
     padding: 4px 0;
 }
 
+
+
 #content #bottom-menu ul li i,
 #content #bottom-menu ul li a {
     display: block;
@@ -544,14 +523,11 @@ form #btnLogin {
     position: relative;
 }
 
-#content #bg {
-    position: relative;
-}
-
 #content #bg.photobooth {
     background-color: #bcc7c4;
     min-height: 650px;
 }
+
 
 #content #bg img {
     width: 100%;
@@ -580,7 +556,6 @@ form #btnLogin {
     bottom: -2px;
     /*top: calc(100% - 5px) !important;*/
 }
-
 #content #bg .indicator.d-10 {
     width: 10px;
     height: 10px;
@@ -639,27 +614,26 @@ form #btnLogin {
     height: 8.7%;
     background-color: #000;
 }
-
 #content #bg #enterAudi1 {
     position: absolute;
-    top: 33.4%;
-    left: 37.6%;
+    top: 26.4%;
+    left: 13.2%;
     width: 7.4%;
     height: 2.8%;
 }
 
 #content #bg #enterAudi2 {
     position: absolute;
-    top: 33.9%;
-    left: 46.2%;
+    top: 26.7%;
+    left: 29.2%;
     width: 7%;
     height: 2.5%;
 }
 
 #content #bg #enterAudi3 {
     position: absolute;
-    top: 33.8%;
-    left: 54.3%;
+    top: 26.8%;
+    left: 63.3%;
     width: 6.5%;
     height: 2.4%;
 }
@@ -670,13 +644,12 @@ form #btnLogin {
     left: 49.9%;
     width: 6.5%;
     height: 8.5%;
+    
 }
-
-#content #bg #photobooth .indicator {
+#content #bg #photobooth .indicator{
     bottom: 55%;
     left: 50%;
 }
-
 #content #bg #timeline {
     position: absolute;
     top: 57%;
@@ -685,8 +658,7 @@ form #btnLogin {
     height: 10.4%;
     transform: rotate(-1.5deg);
 }
-
-#content #bg #timeline .indicator {
+#content #bg #timeline .indicator{
     bottom: 45%;
     left: 40%;
 }
@@ -701,8 +673,8 @@ form #btnLogin {
 
 #content #bg #enterHall {
     position: absolute;
-    top: 47.4%;
-    left: 25.5%;
+    top: 42.4%;
+    left: 24.5%;
     width: 8.8%;
     height: 2.4%;
     transform: rotate(-4.4deg);
@@ -710,7 +682,7 @@ form #btnLogin {
 
 #content #bg #enterLounge {
     position: absolute;
-    top: 46.2%;
+    top: 42.2%;
     left: 65.6%;
     width: 8.6%;
     height: 2.8%;
@@ -719,13 +691,12 @@ form #btnLogin {
 
 #content #bg #showAgenda {
     position: absolute;
-    top: 58%;
-    left: 61.2%;
+    top: 57%;
+    left: 62.7%;
     width: 3.7%;
     height: 2.1%;
 }
-
-#content #bg #showAgenda .indicator {
+#content #bg #showAgenda .indicator{
     bottom: 1%;
     left: 45%;
 }
@@ -738,7 +709,7 @@ form #btnLogin {
     height: 1.8%
 }
 
-#content #bg #resource .indicator {
+#content #bg #resource .indicator{
     bottom: 1%;
     left: 45%;
 }
@@ -746,16 +717,14 @@ form #btnLogin {
 #content #bg #digitalcertificate {
     position: absolute;
     top: 62.2%;
-    left: 61.2%;
+    left: 62.7%;
     width: 3.7%;
     height: 2.5%;
 }
-
-#content #bg #digitalcertificate .indicator {
+#content #bg #digitalcertificate .indicator{
     bottom: 1%;
     left: 45%;
 }
-
 #content #bg #timeline-left {
     position: absolute;
     top: 25.4%;
@@ -763,12 +732,10 @@ form #btnLogin {
     width: 35.4%;
     height: 35.2%;
 }
-
-#content #bg #timeline-left .indicator {
+#content #bg #timeline-left .indicator{
     bottom: 40% !important;
     left: 50%;
 }
-
 #content #bg #timeline-right {
     position: absolute;
     top: 25.4%;
@@ -776,12 +743,10 @@ form #btnLogin {
     width: 43.4%;
     height: 35.2%;
 }
-
-#content #bg #timeline-right .indicator {
+#content #bg #timeline-right .indicator{
     bottom: 45% !important;
     left: 40%;
 }
-
 #content #bg #showProfile {
     position: absolute;
     top: 38.4%;
@@ -792,39 +757,25 @@ form #btnLogin {
 
 #content #bg #shareCards {
     position: absolute;
-    top: 12.2%;
-    left: 41.6%;
-    width: 7%;
-    height: 8%;
+    top: 13.2%;
+    left: 35.6%;
+    width: 14%;
+    height: 13.6%;
 }
 
 #content #bg #shareCards .indicator {
     bottom: 0;
     left: 45%;
 }
-
 #content #bg #chatAttendees {
     position: absolute;
     top: 13.2%;
     left: 51.6%;
-    width: 7%;
-    height: 7%;
+    width: 14%;
+    height: 13.6%;
 }
 
 #content #bg #chatAttendees .indicator {
-    bottom: 0;
-    left: 48%;
-}
-
-#content #bg #chatAttendees1 {
-    position: absolute;
-    top: 21.2%;
-    left: 46.6%;
-    width: 7%;
-    height: 3.2%;
-}
-
-#content #bg #chatAttendees1 .indicator {
     bottom: 0;
     left: 48%;
 }
@@ -838,24 +789,32 @@ form #btnLogin {
     text-align: center;
 }
 
-#content #bg #cert-area {
+#content #bg #certText {
     position: absolute;
     top: 70px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 566px;
+    text-align: center;
+    color: #fff;
+}
+#content #bg #cert-area {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 566px;
     height: 400px;
 }
-
-#content #bg #cert-area img {
+#content #bg #cert-area img{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
-
-#content #bg #cert-area::before {
+#content #bg #cert-area::before{
     display: block;
     padding-top: 71%;
     content: '';
@@ -865,7 +824,7 @@ form #btnLogin {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+            transform: translateX(-50%);
     background-color: #01bcdf;
     text-align: center;
     color: #fff;
@@ -875,18 +834,17 @@ form #btnLogin {
 
 #content #bg .cert .name-text {
     position: absolute;
-    top: 45%;
+    top: 35%;
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     text-align: center;
-    left: 45%;
+    left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    color: black;
+    color: #fff;
 }
-
 #content #bg #shareEcard {
     position: absolute;
     top: 18.7%;
@@ -894,7 +852,6 @@ form #btnLogin {
     width: 4.0%;
     height: 4.0%;
 }
-
 #content #bg .game {
     background-color: #000;
     padding: 6px 18px;
@@ -917,35 +874,32 @@ form #btnLogin {
     width: 100%;
     height: 60px;
     transform: translateX(-50%);
-    background-color: rgba(0, 123, 255, 0.65);
+    background-color: rgba(0,123,255,0.65);
     color: #eee;
     padding: 5px 10px;
 }
-
 #content #bg #webcast-area.audi1 {
     position: absolute;
     background-color: #000;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 80%;
+    top: 28.9%;
+    left: 37.3%;
+    width: 25.2%;
+    height: 21.4%;
 }
-
 #content #bg #webcast-area.audi2 {
     position: absolute;
     background-color: #000;
-    top: 25.9%;
-    left: 39.4%;
-    width: 21.8%;
+    top: 28.9%;
+    left: 37.4%;
+    width: 25.8%;
     height: 22.2%;
 }
-
 #content #bg #webcast-area.audi3 {
     position: absolute;
     background-color: #000;
-    top: 26.1%;
-    left: 39.4%;
-    width: 22%;
+    top: 29.1%;
+    left: 37.4%;
+    width: 25.4%;
     height: 22.0%;
 }
 
@@ -975,7 +929,6 @@ form #btnLogin {
     width: 18.0%;
     height: 17.7%;
 }
-
 #content #bg #bondk {
     position: absolute;
     top: 35.8%;
@@ -983,7 +936,6 @@ form #btnLogin {
     width: 6%;
     height: 11%;
 }
-
 #content #bg #esoz {
     position: absolute;
     top: 39.8%;
@@ -991,7 +943,6 @@ form #btnLogin {
     width: 6%;
     height: 11%;
 }
-
 #content #bg #colsmartA {
     position: absolute;
     top: 36.2%;
@@ -999,7 +950,6 @@ form #btnLogin {
     width: 7%;
     height: 10.6%;
 }
-
 #content #bg #bonk2 {
     position: absolute;
     top: 38.8%;
@@ -1007,7 +957,6 @@ form #btnLogin {
     width: 6%;
     height: 11%;
 }
-
 #content #bg #lizolid {
     position: absolute;
     top: 35.4%;
@@ -1015,7 +964,6 @@ form #btnLogin {
     width: 6%;
     height: 11%;
 }
-
 #content #bg #dubinor {
     position: absolute;
     top: 50.4%;
@@ -1023,7 +971,6 @@ form #btnLogin {
     width: 7%;
     height: 14%;
 }
-
 #content #bg #stiloz {
     position: absolute;
     top: 50.0%;
@@ -1031,7 +978,6 @@ form #btnLogin {
     width: 6.7%;
     height: 11%;
 }
-
 #content #bg #dubinor-ointments {
     position: absolute;
     top: 49.6%;
@@ -1039,7 +985,6 @@ form #btnLogin {
     width: 6.7%;
     height: 11%;
 }
-
 #content #bg #bmdcamp {
     position: absolute;
     top: 45.4%;
@@ -1047,7 +992,6 @@ form #btnLogin {
     width: 7.7%;
     height: 14%;
 }
-
 #content #bg #ebovpg {
     position: absolute;
     top: 57.4%;
@@ -1055,7 +999,6 @@ form #btnLogin {
     width: 7.7%;
     height: 14%;
 }
-
 #content #bg #vkonnecthealth {
     position: absolute;
     top: 57.4%;
@@ -1065,13 +1008,10 @@ form #btnLogin {
 }
 
 #content #bg a.view .indicator,
-#content #bg a.viewvideo .indicator {
+#content #bg a.viewvideo .indicator{
     bottom: 50% !important;
 }
-
-
 /*Bon DK*/
-
 #content #bg.bondk #subSampleReq {
     position: absolute;
     top: 25.4%;
@@ -1104,9 +1044,7 @@ form #btnLogin {
     height: 23.5%;
 }
 
-
 /*ESOZ*/
-
 #content #bg.esoz #subSampleReq {
     position: absolute;
     top: 25.3%;
@@ -1139,7 +1077,6 @@ form #btnLogin {
     height: 23.5%;
 }
 
-
 /*Collasmart-A*/
 
 #content #bg.colsmarta #poster1 {
@@ -1166,9 +1103,7 @@ form #btnLogin {
     height: 6.2%;
 }
 
-
 /*BON K2*/
-
 #content #bg.bonk2 #subSampleReq {
     position: absolute;
     top: 26.8%;
@@ -1184,7 +1119,6 @@ form #btnLogin {
     width: 5.8%;
     height: 7.0%;
 }
-
 #content #bg.bonk2 #poster1 {
     position: absolute;
     top: 27.6%;
@@ -1208,7 +1142,6 @@ form #btnLogin {
     width: 9.8%;
     height: 8.8%;
 }
-
 
 /*Lizolid*/
 
@@ -1246,7 +1179,6 @@ form #btnLogin {
 
 
 /*Stiloz*/
-
 #content #bg.stiloz #subSampleReq {
     position: absolute;
     top: 25.6%;
@@ -1279,9 +1211,7 @@ form #btnLogin {
     height: 22.9%;
 }
 
-
 /*Dubinor*/
-
 #content #bg.dubinor #subSampleReq {
     position: absolute;
     top: 25.4%;
@@ -1314,9 +1244,7 @@ form #btnLogin {
     height: 23.5%;
 }
 
-
 /*Dubinor Ointments*/
-
 #content #bg.dubinor-ointments #subSampleReq {
     position: absolute;
     top: 25.4%;
@@ -1349,9 +1277,7 @@ form #btnLogin {
     height: 23.4%;
 }
 
-
 /*BMD Camp*/
-
 #content #bg.bmdcamp #subCampReq {
     position: absolute;
     top: 27.2%;
@@ -1359,7 +1285,6 @@ form #btnLogin {
     width: 7.6%;
     height: 10.5%;
 }
-
 #content #bg.bmdcamp #dlBrochure {
     position: absolute;
     top: 29.0%;
@@ -1383,10 +1308,7 @@ form #btnLogin {
     width: 10.9%;
     height: 21.3%;
 }
-
-
 /*EBOV PG*/
-
 #content #bg.ebovpg #subSampleReq {
     position: absolute;
     top: 26.8%;
@@ -1418,10 +1340,7 @@ form #btnLogin {
     width: 11.8%;
     height: 22.3%;
 }
-
-
 /*VKONNECT HEALTH*/
-
 #content #bg.vkonnect #subProdDet {
     position: absolute;
     top: 37.1%;
@@ -1446,10 +1365,31 @@ form #btnLogin {
     height: 22.1%;
 }
 
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+
+
+
+
+
 #content #audiAgenda,
 #content #ask-ques,
 #content #take-poll {
-    background-color: #155091;
+    background-color: #000;
     position: absolute;
     top: 32.5%;
     left: 0;
@@ -1491,16 +1431,6 @@ form #btnLogin {
     top: calc(32.5% + 100px);
 }
 
-.btn-sendmsg {
-    background-color: #d5ecf8;
-    color: black;
-}
-
-.btn-sendmsg:hover {
-    background-color: #0e3144;
-    color: white;
-}
-
 #content .panel {
     position: absolute;
     top: 60px;
@@ -1508,7 +1438,7 @@ form #btnLogin {
     width: 300px;
     height: calc(100vh - 120px);
     cursor: pointer;
-    background-color: #155091;
+    background-color: #adb5bd;
     font-size: 1em;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -1549,40 +1479,39 @@ form #btnLogin {
     transform: translateX(-50%);
     height: 500px;
 }
-
-#content #photobooth #social a {
-    margin-right: 10px;
+#content #photobooth #social a{
+margin-right: 10px;
 }
-
-#content #photobooth #social i {
+#content #photobooth #social i{
     color: #ea2224;
 }
-
 #content #photobooth #options {
     position: absolute;
     top: 30px;
     left: 330px;
+    
 }
-
 #content #photobooth #options-2 {
     position: absolute;
     top: 400px;
     left: 50%;
     transform: translateX(-50%);
+    
 }
-
 #content #photobooth #options-2 ul li,
-#content #photobooth #options ul li {
+#content #photobooth #options ul li{
     background-color: #ea2224;
+    
     margin-bottom: 10px;
 }
-
 #content #photobooth #options ul li a,
-#content #photobooth #options-2 ul li a {
-    color: #fff;
+#content #photobooth #options-2 ul li a{
+    color:  #fff;
     display: block;
     padding: 8px 12px;
+    
 }
+
 
 #content #photobooth #my_camera {
     /*width: 454px;
@@ -2276,133 +2205,83 @@ section.videotoplay .skip a:hover {
     height: calc(100vh - 100px);
 }
 
-ul.popuplist {
+ul.popuplist{
     list-style: none;
     padding: 0;
     margin-left: 0;
 }
-
-ul.popuplist li {
+ul.popuplist li{
     padding: 10px;
+    
 }
-
-ul.popuplist li i,
-ul.popuplist li a {
+ul.popuplist li i, 
+ul.popuplist li a{
     color: #333 !important;
     font-size: 1.2em;
 }
-
-ul.popuplist li i {
+ul.popuplist li i{
     margin-right: 10px;
 }
 
-@media only screen and (max-width: 1100px) {
-    #content #bottom-menu {
+@media only screen and  (max-width: 1100px) { 
+    #content #bottom-menu{
         font-size: 0.65rem;
+        
     }
-    #content #bottom-menu .bottom-nav {
+    #content #bottom-menu .bottom-nav{
         float: left;
     }
-    #content #header-menu {
+    #content #header-menu{
         height: 55px;
     }
-    #content #header-menu .navbar {
+    #content #header-menu .navbar{
         padding: 3px;
     }
 }
-
-@media only screen and (max-width: 900px) {
-    #content #bg #webcast-area.audi1 {
-        position: absolute;
-        background-color: #000;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        height: 70%;
-    }
-    #content #audiAgenda,
-    #content #ask-ques,
-    #content #take-poll {
+@media only screen and  (max-width: 900px) { 
+    #content #audiAgenda, #content #ask-ques, #content #take-poll{
         top: 25.0%;
         width: 100px;
     }
-    #content #take-poll {
+    #content #take-poll{
         top: calc(25% + 70px);
     }
-    #content #audiAgenda a,
-    #content #ask-ques a,
-    #content #take-poll a {
+    #content #audiAgenda a, #content #ask-ques a, #content #take-poll a{
         font-size: 0.85em;
         padding: 10px 0px;
     }
-    #content #disclaimer {
+    #content #disclaimer{
         padding: 5px;
         bottom: 50px;
         font-size: 0.8em;
     }
-    #content #bottom-menu {
+    #content #bottom-menu{
         font-size: 0.5rem;
         height: 50px;
     }
-    #content #bottom-menu .bottom-nav ul li a {
+    #content #bottom-menu .bottom-nav ul li a{ 
         padding: 5px;
     }
-    #content #header-menu {
+    #content #header-menu{
         height: 50px;
     }
-    #content #header-menu .navbar {
+    #content #header-menu .navbar{
         padding: 2px;
     }
-    #content #header-menu a {
+    #content #header-menu a{
         font-size: 0.6em;
     }
 }
-
-@media only screen and (max-width: 600px) {
-    #content #bg #webcast-area.audi1 {
-        position: absolute;
-        background-color: #000;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        height: 50% !important;
-    }
-    #content #bottom-menu {
+@media only screen and  (max-width: 600px) { 
+    #content #bottom-menu{
         font-size: 0.3rem;
         height: 40px;
     }
-    #content #bottom-menu .bottom-nav ul li a {
+    #content #bottom-menu .bottom-nav ul li a{ 
         padding: 5px 2px !important;
     }
-    #content #bottom-menu #helpline {
-        right: 0px !important;
+    #content #bottom-menu #helpline{
+        right:0px !important;
     }
-
-    /* #content #bg #cert-area {
-        position: absolute;
-        top: 70px;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        width: 250px;
-        height: 400p;
-    } */
 }
 
-/* @media screen and (max-width: 350px) and (min-width: 200px) {
-
-    #content #bg #cert-area {
-        position: absolute;
-        top: 70px;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        width: 200px;
-        height: 400px;
-    }
-
-    #content #bg .cert .name-text {
-        position: absolute;
-        top:15% !important;
-    }
-} */
