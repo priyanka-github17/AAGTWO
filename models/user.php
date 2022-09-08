@@ -280,6 +280,53 @@ class User
     }
   }
 
+  public function userLogin1()
+  {
+    $status = $this->getUserByEmail();
+    // 
+    if (empty($status)) {
+      $response = setResponse('error', 'You are not registered.');
+      return $response;
+    } else {
+      //  echo "hi test"; print_r($status); die();
+      $this->user_id = $status[0]['userid'];
+      print_r($this->user_id);
+      $login_date     = date('Y/m/d H:i:s');
+      $logout_date    = date('Y/m/d H:i:s', time() + 60);
+
+      $dateTimestamp1 = strtotime($status[0]["logoutdate"]);
+      $dateTimestamp2 = strtotime($login_date);
+
+      if ($dateTimestamp1 > $dateTimestamp2) {
+        $response = setResponse('error', 'You are already logged in from another location. Please logout from other location and try again.');
+        return $response;
+      }
+
+      $query = 'Update ' . $this->table . ' set login_date=?, logout_date=? where emailid = ?';
+      $paramType = 'sss';
+      $paramValue = array(
+        $login_date,
+        $logout_date,
+        $this->emailid
+      );
+
+      $this->ds->execute($query, $paramType, $paramValue);
+
+      $query = "Insert into " . $this->logintable . "(user_id, join_time, leave_time) values(?, ?, ?)";
+      $paramType = 'sss';
+      $paramValue = array(
+        $this->user_id,
+        $login_date,
+        $logout_date
+      );
+
+      $this->ds->execute($query, $paramType, $paramValue);
+      // print_r($this->user_id);
+      $_SESSION['userid'] = $this->user_id;
+      header('location: quizfile/index.php');
+    }
+  }
+
   public function userLogout()
   {
     $logout_date   = date('Y/m/d H:i:s');

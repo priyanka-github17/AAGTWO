@@ -9,6 +9,33 @@ require_once "logincheck.php";
 $curr_room = 'lobby';
 
 ?>
+<?php
+require_once 'functions.php';
+
+$errors = [];
+$succ = '';
+
+$emailid = '';
+
+if (isset($_POST['loginuser-btn'])) {
+  if (empty($_POST['emailid'])) {
+    $errors['email'] = 'Email ID is required';
+  }
+
+  $emailid = $_POST['emailid'];
+
+  if (count($errors) == 0) {
+    $user = new User();
+    $user->__set('emailid', $emailid);
+    $login = $user->userLogin1();
+    //var_dump($login);
+    $reg_status = $login['status'];
+    if ($reg_status == "error") {
+      $errors['login'] = $login['message'];
+    }
+  }
+}
+?>
 <?php require_once 'header.php';  ?>
 
 
@@ -223,15 +250,30 @@ $curr_room = 'lobby';
                                         <!-- <img src="img_avatar4.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top"> -->
                                     </div>
 
-                                    <form   class="w3-container"action='./quizfile/reg.php' method="post" role="form">
+                                    <!-- <form   action='./quizfile/reg.php' method="post" role="form"> -->
+                                    <form action="" class="w3-container" method="post">
                               
                                     <!-- <form class="w3-container" action="./quizfile/index.php" method="post"> -->
                                         <div class="w3-section">
                                         <label><b>To avail certification and credit hours, add your Registration Number</b></label>
-                                        <input class="w3-input w3-border w3-margin-bottom" type="number"  placeholder="Enter Registration number" name="doctors_id" required>
+                                        <!-- <input class="w3-input w3-border w3-margin-bottom" type="number"  placeholder="Enter Registration number" name="doctors_id" required> -->
+                                        <?php
+                                        if (count($errors) > 0) : ?>
+                                        <div class="alert alert-danger alert-msg">
+                                            <ul class="list-unstyled">
+                                            <?php foreach ($errors as $error) : ?>
+                                                <li>
+                                                <?php echo $error; ?>
+                                                </li>
+                                            <?php endforeach; ?>
+                                            </ul>
+                                        </div>
+                                        <?php endif; ?>
+                                        <input type="text" name="emailid" id="emailid" class="w3-input w3-border w3-margin-bottom" placeholder="Enter Registration number" value="<?= $emailid?>">
                                         <!-- <label><b>Password</b></label>
                                         <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required> -->
-                                        <button class="w3-button w3-block w3-blue w3-section w3-padding" id="formsubmit" type="submit">Submit and Continue</button>
+                                        <!-- <button class="w3-button w3-block w3-blue w3-section w3-padding" id="formsubmit" id="btnLogin" type="submit">Submit and Continue</button> -->
+                                        <input type="submit" name="loginuser-btn" id="formsubmit"  class="w3-button w3-block w3-blue w3-section w3-padding" value="Login" />
                                         <!-- <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me -->
                                         </div>
                                     </form>
