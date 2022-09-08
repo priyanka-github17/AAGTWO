@@ -1,0 +1,347 @@
+
+/* quad hd laptops/monitor and upper */
+@media only screen and  (max-width: 2600px) {
+  
+}
+
+/* full hd laptops/monitor */
+@media only screen and  (max-width: 1940px) {
+ 
+}
+
+
+/* 1600*900 laptops/monitor */
+@media only screen and  (max-width: 1600px) { 
+}
+
+
+@media only screen and  (max-width: 1450px) { 
+}
+
+@media only screen and  (max-width: 1380px) { 
+}
+    
+/* Hd laptops/monitor */
+@media only screen and  (max-width: 1367px){
+        
+    .cam-panel-modal-dialog {
+        margin-top: 0;
+    }
+}
+
+
+
+/* Big Tabs */
+@media only screen and  (max-width: 1200px) { 
+}
+
+
+
+/* Large Tabs */
+@media only screen and (max-width: 1030px) {
+ 
+}
+
+
+/* Small Tabs */
+@media only screen and (max-width: 770px) {
+ 
+}
+
+
+
+
+/* Small and large tabs in landscape */
+@media only screen and  (max-width: 1300px) and (orientation: landscape) {
+ 
+}
+
+
+
+/* phones & small tabs in landscape */
+@media only screen and (max-width: 1030px) and (orientation: landscape) {
+   
+}
+
+
+/* Small Phones in landscape */
+@media only screen and (max-width: 770px) and (orientation: landscape) {
+    
+}
+
+
+
+
+
+/* Phones */
+@media only screen and (max-width: 480px) {
+
+    /* .cam-panel-modal-dialog {
+        max-width: 70%;
+        width: 65%;
+    }
+
+    .cam-panel-modal-content {
+        height: auto;
+        width: 100%;
+    }
+
+    .cam-modal-body {
+        margin-top: 0px;
+    }
+
+    #cam-feed{
+        border: solid springgreen;
+    }
+    #cam-panel {
+        height: auto !important;
+        width: 100% !important;
+ 
+    }
+    
+    #cam-overlay {
+        height: auto !important;
+    }
+    .cam-panel-modal-content, .cam-modal-body, .photo-jacket-container, .photo-jacket {
+        height: auto !important;
+    }
+
+    #cam-btn, #retake-btn, #save-btn {
+        transform: scale(0.75); 
+    }
+
+    #after-capture, #before-capture {
+        bottom: 0px;
+    } */
+
+    #cam-panel {
+        width: 185px !important;
+        height: 300px !important;
+    }
+
+    #cam-btn, #retake-btn, #save-btn {
+        transform: scale(0.6); 
+    }
+
+    #after-capture, #before-capture {
+        bottom: 0px;
+    }
+    #after-capture .btn, #before-capture .btn {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .photo-jacket-container {
+        
+          height: 300px;
+          
+      }
+    
+}
+
+
+
+
+
+
+
+/* smaller Phones */
+@media only screen and (max-width: 380px) {
+    
+    #cam-btn, #retake-btn, #save-btn {
+        transform: scale(0.5); 
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Landscapes */
+
+@media only screen and (min-device-width: 300px) 
+                   and (max-device-width: 700px) 
+                   and (orientation: landscape) {
+
+    #cam-panel {
+        overflow: hidden;
+        /* width: 100%;
+        height: 100%; */
+        /* width: 300px !important;
+        height: 290px !important; */
+        width: 220px !important;
+       height: 220px !important;        
+    }
+    .cam-panel-modal {        top: 0%;    }
+    .cam-panel-modal-dialog {        padding : 1% 0;  width: 230px;   }
+    /* .cam-panel-modal-content {        height: 270px;    } */
+    .cam-panel-modal-content {        height: auto;    }
+
+    #after-capture, #before-capture { 
+        transform: scale(0.5);
+        transform-origin: 50% 50%; 
+        left: 0;
+        bottom: -6px;
+    }
+
+    .photo-jacket-container {
+        
+          height: 220px;
+          
+      }
+ 
+ 
+
+}
+
+
+@media only screen and (min-device-width: 701px) 
+                   and (max-device-width: 999px) 
+                   and (orientation: landscape) {
+
+    #cam-panel {
+        overflow: hidden;
+        /* width: 390px !important; */
+        /* width: 313px !important;
+        height: 290px !important; */
+        width: 154px !important;
+        height: 250px !important;
+    }
+    .photo-jacket-container {
+          height: 250px;
+      }
+    .cam-panel-modal {        top: 0%;    }
+    .cam-panel-modal-dialog {        padding : 1% 0;  width:240px;   }
+    /* .cam-panel-modal-content {        height: 320px; } */
+    .cam-panel-modal-content { height: auto; }
+
+    #after-capture, #before-capture { 
+        transform: scale(0.55);
+        transform-origin: 50% 50%; 
+        left: 0;
+        bottom: 0px;
+    }
+ 
+    
+   
+}
+
+
+
+/* Targetting iphone */
+@media  screen  and (min-device-width : 400px) 
+    and (max-device-width : 900px)  and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)  {
+
+    @media  screen and  (min-device-height : 800px) 
+    and (max-device-height : 900px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      
+        #cam-panel {
+            overflow: hidden;
+            width: 230px !important;
+            height: 250px !important;
+        }
+        
+        .cam-panel-modal {        top: 0%;    }
+        .cam-panel-modal-dialog {        padding : 1% 0;  width:240px;   }
+        /* .cam-panel-modal-content {        height: 295px; } */
+        .cam-panel-modal-content {   height: auto;  }
+        .cam-modal-body {
+            margin-top: 20px;
+        }
+
+        #after-capture, #before-capture { 
+            transform: scale(0.55);
+            transform-origin: 50% 50%; 
+            left: 0;
+            bottom: 0px;
+        }
+     
+
+    }
+ }
+
+
+
+
+
+ 
+/* target ipad */
+@media  screen  and (min-device-width : 768px) 
+    and (max-device-width : 1029px)  and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    @media  screen and  (min-device-height : 608px) 
+    and (max-device-height : 1029px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+ 
+        #cam-panel {
+            overflow: hidden;
+            /* width:  490px !important; */
+            width:  400px !important;
+            height: 430px !important;
+        }
+        .cam-panel-modal {        top: 10%;    }
+        .cam-panel-modal-dialog {        padding : 1% 0;  width:420px;  }
+        /* .cam-panel-modal-content {        height: 480px;    } */
+        .cam-panel-modal-content {       height: auto;   }
+        .cam-modal-body {
+            margin-top: 20px;
+        }
+
+        #after-capture, #before-capture { 
+            transform: scale(1);
+            transform-origin: 50% 50%; 
+            left: 0;
+        }
+
+    }
+ }
+
+
+
+
+
+
+
+@media only screen and (min-device-width: 1030px) 
+                   and (max-device-width: 1200px) 
+                   and (orientation: landscape) {
+ 
+                    
+ 
+}
+
+
+
+
+
+
+@media only screen and (min-device-width: 1201px) 
+                   and (max-device-width: 1300px) 
+                   and (orientation: landscape) {
+                    
+    .cam-panel-modal {        top: 0%;    }
+}
+
+
+
+
+
+
+
+
+
+
+
