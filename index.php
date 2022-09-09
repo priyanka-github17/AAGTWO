@@ -42,12 +42,13 @@ if (isset($_POST['loginuser-btn'])) {
   <div class="row mb-1 mt-2">
   <div class="col-12 col-md-2"></div>
     <div class="col-12 col-md-8">
+    <a href="register.php">
       <img src="assets/img/AAG V Connect Banner 1960 X 1080 px new1.png" class="img-fluid" alt="">
      
-   
+   </a>
       <div class="right-area-wrapper">
       
-      <div class="row mt-1 p-2 pt-1">
+      <div class="row p-2 pt-1">
           <div class="col-12">
           To login, please enter your registered Email ID:
             <?php
@@ -69,6 +70,11 @@ if (isset($_POST['loginuser-btn'])) {
               </div>
               <div class="form-group mb-0">
                 <input type="submit" name="loginuser-btn" id="btnLogin" class="form-submit btn-login" value="Login" />
+                <!-- <div class="col-12 col-md-2">
+    <a href="register.php">
+          <button>Button</button>
+        </a>
+    </div> -->
               </div>
             </form>
 
@@ -91,11 +97,11 @@ if (isset($_POST['loginuser-btn'])) {
        
       </div>
     </div>
-    <div class="col-12 col-md-2">
+    <!-- <div class="col-12 col-md-2">
     <a href="register.php">
           <button>Button</button>
         </a>
-    </div>
+    </div> -->
   </div>
   <!--  <div class="row p-3">
     <div class="col-12 col-md-3 text-center">

@@ -164,15 +164,19 @@ if (isset($_POST['reguser-btn'])) {
 
 <body>
 
-    <div class="container bg-white reg-content">
+    <div class="container reg-content">
         <div class="row">
-            <div class="col-12 p-0">
+        <div class="col-md-1"></div>
+            <div class="col-12 col-md-10 p-0">
                 <img src="assets/img/AAG V Connect Banner 1960 X 1080 px new1.png" class="img-fluid" alt="">
             </div>
+            <div class="col-md-1"></div>
         </div>
 
         <div class="row">
-            <div class="col-12 col-md-8 mx-auto p-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-1 bg-white"></div>
+            <div class="col-12 col-md-8 bg-white mx-auto p-2">
                 <h5>Register for BOOT International Live!</h5>
                 <?php
                 if (count($errors) > 0) : ?>
@@ -247,12 +251,14 @@ if (isset($_POST['reguser-btn'])) {
                     </div>
                 </form>
             </div>
+            <div class="col-md-1 bg-white"></div>
+            <div class="col-md-1"></div>
         </div>
-        <div class="row bg-white">
+        <!-- <div class="row bg-white">
             <div class="col-12">
                 <img src="assets/img/line-h.jpg" class="img-fluid" alt="" />
             </div>
-        </div>
+        </div> -->
      
 
     </div>

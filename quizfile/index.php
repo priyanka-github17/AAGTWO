@@ -11,220 +11,18 @@ $curr_room = 'pretest_module1';
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="styles.css">
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tiro+Bangla&display=swap');
+    /* .score{
+    display: inline;
+} */
 
-    :root {
-        /* --body-bg: #d99e55;
-        ; */
-        --start_quiz-c: #1d9eab;
-        --white: rgba(255, 255, 255, 0.4);
-        --bg-button: #e0e0e0;
-        --right: #87e487;
-        --wrong: #f19a9a;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: "Raleway", sans-serif;
-        height: 100vh;
-        background-image: url("medical-education-2.png");
-        /* background-image:linear-gradient(#155091, transparent); */
-        background-size: cover;
-
-    }
-
-    input,
-    button,
-    h1,
-    span {
-        outline: 0;
-        border: 0;
-        font-family: "Raleway", sans-serif;
-    }
-
-    /* center all box  */
-
-    .start {
-        position: absolute;
-        /* top:50%; */
-        top: 47%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 50px;
-        /* background: var(--white); */
-        background-color: transparent !important;
-        /* box-shadow: 15px 15px 24px #5f7197, -15px -15px 20px #df0e86; */
-        box-shadow: 15px 15px 24px #5f7197;
-
-    }
-
-    .start2 {
-        position: absolute;
-        /* top:50%; */
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 50px;
-        /* background: var(--white); */
-        /* background-color:#1977cc !important; */
-        /* box-shadow: 15px 15px 24px #5f7197, -15px -15px 20px #df0e86; */
-        box-shadow: 15px 15px 24px #5f7197;
-
-    }
-
-    .quiz_container,
-    .result_box {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 50px;
-        /* background: var(--white); */
-        background: white;
-
-        /* background-color:#1977cc !important; */
-        /* box-shadow: 15px 15px 24px #5f7197, -15px -15px 20px #df0e86; */
-        box-shadow: 15px 15px 24px #5f7197;
-
-    }
-
-    .result_box {
-
-        padding: 138px;
-        width: 500px;
-        height: 290px;
-        border-radius: 5px;
-
-    }
-
-    .start #start_quiz {
-        /* padding: 16px 30px; */
-        padding: 7px 15px;
-        border-radius: 50px;
-        /* color: var(--start_quiz-c); */
-        /* color: #155091; */
-        color: #fff;
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        /* width: 135%; */
-        /* border-right: 3px solid #155091; */
-        /* border-bottom: 5px solid #155091;
-        border-right: 4px solid #155091; */
-    }
-
-    /* quiz box  */
-    .btn2 {
-        padding: 20px 24px;
-    /* padding: 16px 30px; */
-    /* padding: 7px 15px; */
-    border-radius: 5px;
-    /* background: var(--start_quiz-c); */
-    background: #d61a5e;
-    /* color: var(--white); */
-    /* font-size: 3.4vmin; */
-    font-size: 1.4rem;
-    cursor: pointer;
-    color: white;
-    /* width: 350px; */
-    text-transform: uppercase;
-    margin-top: 10px;
-    /* box-shadow: 15px 15px 24px #5f7197; */
-    }
-
-    .quiz_container {
-        border-radius: 20px;
-        padding: 20px;
-        width: 600px;
-        display: none;
-    }
-
-    /* quiz_text  */
-
-    .quiz_container .quiz_text {
-        margin-bottom: 20px;
-    }
-
-    .quiz_container .quiz_text h1 {
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-        text-align: center;
-    }
-
-    /* quiz_box  */
-
-    .quiz_box {
-        padding: 10px 5px;
-    }
-
-    .quiz_box .quiz_question h1 {
-        font-size: 2.5vmin;
-    }
-
-    .quiz_box .quiz_question p {
-        display: inline;
-    }
-
-    /* options  */
-
-    .option_list {
-        margin-top: 15px;
-        font-size: 2vmin;
-        padding: 5px 15px;
-        background-color: var(--bg-button);
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 0.5s ease;
-        user-select: none;
-        /* box-shadow: 1px 1px 8px #bebebe, -1px -1px 20px #ffffff */
-    }
-
-    .options .option_list:hover {
-        background-color: var(--start_quiz-c);
-    }
-
-    .options .option_list.correct {
-        background-color: var(--right);
-    }
-
-    .options .option_list.wrong {
-        background-color: var(--wrong);
-    }
-
-    .disabled {
-        pointer-events: none;
-    }
-
-    /* footer  */
-
-    footer {
-        margin-top: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        user-select: none;
-    }
-
-    .center {
-        display: flex;
-        font-size: 2vmin;
-        margin-left: 6px;
-    }
-
-    footer .buttons {
-        margin-right: 6px;
-    }
-
-    .btn {
+.btn {
         padding: 7px 15px;
         border-radius: 50px;
         /* background: var(--start_quiz-c); */
@@ -235,38 +33,15 @@ $curr_room = 'pretest_module1';
         color: white;
 
         width: 100%;
-        margin-right: 77px;
+        /* margin-right: 77px; */
 
     }
 
-    /* score  */
-
-    .result_box {
-        display: none;
-        padding: 20px;
-        text-align: center;
+    .btn-sm{
+        width:45%;
     }
 
-    .score span {
-        margin: 15px 0;
-        display: flex;
-        justify-content: center;
-        font-size: 3rem;
-        font-weight: 600;
-    }
 
-    span p {
-        padding: 0 5px;
-    }
-
-    #quizQn {
-        padding: 20px;
-        /* background: #4c93ba; */
-        background: #155091;
-        color: #fff;
-        font-size: 24px;
-        border-radius: 10px;
-    }
 
     .btn:hover {
         background-color: #4c93ba !important;
@@ -287,68 +62,30 @@ $curr_room = 'pretest_module1';
 
     }
 
-
-    .skin {
-        width: 640px;
-        margin: 10px auto;
-        padding: 5px;
+    .btn2 {
+        padding: 20px 24px;
+    /* padding: 16px 30px; */
+    /* padding: 7px 15px; */
+    border-radius: 5px;
+    /* background: var(--start_quiz-c); */
+    background: #d61a5e;
+    /* color: var(--white); */
+    /* font-size: 3.4vmin; */
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: white;
+    /* width: 350px; */
+    text-transform: uppercase;
+    margin-top: 10px;
+    /* box-shadow: 15px 15px 24px #5f7197; */
     }
-
-    nav {
-        width: 70px;
-        height: 22px;
-        padding: 5px 0px;
-        margin: 0 auto;
-    }
-
-    .mod {
-        color: white;
-        margin-top: 12px;
-        /* margin-bottom:10px; */
-        width: 100%;
-        text-align: center;
-        font-weight: 300;
-        /* font-size: larger; */
-        font-size: 3vmin;
-    }
-
 
     @media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
-
-        h3{
-            font-size:4vmin;
-        }
-
-        /* For portrait layouts only */
-        .quiz_box .quiz_question h1 {
-            font-size: 4vmin;
-        }
-
-        .option_list {
-            font-size: 3.5vmin;
-            padding: 32px 17px;
-        }
-
-        .quiz_container .quiz_text h1 {
-            font-size: 4rem;
-
-        }
-
-        .quiz_container {
-            width: 750px;
-        }
-
         .btn {
             font-size: 4vmin;
+            width:100%;
         }
 
-        .center{
-            font-size: 4vmin;
-        }
-
-        /* .btn2 {
-        font-size:4vmin;
-    } */
         .btn2 {
             padding: 30px 30px;
     /* padding: 7px 15px; */
@@ -363,29 +100,11 @@ $curr_room = 'pretest_module1';
     margin-top: 10px;
     text-transform: uppercase;
         }
-
-        .score span {
-            font-size: 5vmin;
-        }
-
-        .start #start_quiz {
-            font-size: 3.2vmin;
-        }
-
-        .result_box{
-            width:860px;
-    
-        }
         .btn{
             font-size:3vmin;
             font-weight:bold;
         }
-
     }
-
-    /* .score{
-    display: inline;
-} */
 </style>
 <?php
 
@@ -509,9 +228,16 @@ $curr_room = 'pretest_module1';
     </div>
 
     <footer>
+        <div class="row">
+            <div class="col-md-6">
+        
         <div class="question_no"></div>
+        </div>
+        <div class="col-md-6 text-right">
         <div class="buttons">
-            <button class="btn" id="next">Next</button>
+            <button class="btn btn-sm" id="next">Next</button>
+            </div>
+        </div>
         </div>
     </footer>
 </section>
