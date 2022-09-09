@@ -177,7 +177,7 @@ if (isset($_POST['reguser-btn'])) {
         <div class="col-md-1"></div>
         <div class="col-md-1 bg-white"></div>
             <div class="col-12 col-md-8 bg-white mx-auto p-2">
-                <h5>Register for BOOT International Live!</h5>
+                <h5> Register For AAG </h5>
                 <?php
                 if (count($errors) > 0) : ?>
                     <div class="alert alert-danger alert-msg">

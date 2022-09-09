@@ -255,7 +255,7 @@ if (isset($_POST['loginuser-btn'])) {
                               
                                     <!-- <form class="w3-container" action="./quizfile/index.php" method="post"> -->
                                         <div class="w3-section">
-                                        <label><b>To avail certification and credit hours, add your Registration Number</b></label>
+                                        <label><b>To avail certification and credit hours, add your Registered Email ID</b></label>
                                         <!-- <input class="w3-input w3-border w3-margin-bottom" type="number"  placeholder="Enter Registration number" name="doctors_id" required> -->
                                         <?php
                                         if (count($errors) > 0) : ?>
@@ -269,7 +269,7 @@ if (isset($_POST['loginuser-btn'])) {
                                             </ul>
                                         </div>
                                         <?php endif; ?>
-                                        <input type="text" name="emailid" id="emailid" class="w3-input w3-border w3-margin-bottom" placeholder="Enter Registration number" value="<?= $emailid?>">
+                                        <input type="text" name="emailid" id="emailid" class="w3-input w3-border w3-margin-bottom" placeholder="Enter Registered Email ID" value="<?= $emailid?>">
                                         <!-- <label><b>Password</b></label>
                                         <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required> -->
                                         <!-- <button class="w3-button w3-block w3-blue w3-section w3-padding" id="formsubmit" id="btnLogin" type="submit">Submit and Continue</button> -->

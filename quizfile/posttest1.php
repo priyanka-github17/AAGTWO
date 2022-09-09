@@ -17,6 +17,14 @@ $curr_room = 'posttest_module1';
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style1.css">
 
+    <style>
+        @media only screen and (min-device-width: 319px) and (max-device-width: 425px){
+.dropdown:checked + label, .dropdown:not(:checked) + label {
+    height: 11vmin;
+    width: 28rem;
+}}
+    </style>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <title>Integrace</title>
 

@@ -83,7 +83,8 @@ $curr_room = 'pretest_module1';
     @media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
         .btn {
             font-size: 4vmin;
-            width:100%;
+    font-weight: bold;
+    width: 40%;
         }
 
         .btn2 {

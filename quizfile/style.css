@@ -264,11 +264,11 @@ nav {
 @media only screen and (min-device-width: 320px) and (max-device-width: 425px){
      /* For portrait layouts only */
      .quiz_box .quiz_question h1 {
-       font-size: 4vmin ;
+       font-size: 4.5vmin ;
    }
 
    .option_list {
-    font-size: 3.5vmin;
+    font-size: 3.8vmin;
     padding: 32px 17px;
 }
 
@@ -282,7 +282,7 @@ nav {
    }
 
    .quiz_container{
-       width: 750px;
+       width: 830px;
    }
  
    /* .btn {
@@ -317,7 +317,11 @@ text-transform: uppercase;
        font-size:3vmin;
    }
    .start #start_quiz {
-       font-size: 3.2vmin;
+    font-size: 4vmin;
+    width: 140%;
+   }
+   .start{
+    left: 38%;
    }
 
    .center{
