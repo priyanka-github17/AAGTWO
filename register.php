@@ -192,13 +192,13 @@ if (isset($_POST['reguser-btn'])) {
                     </div>
                 <?php } ?>
                 <form method="POST">
-                    <div class="row mt-2">
+                    <div class="row mt-3 mb-1">
                      
                         <div class="col-12 col-md-6">
                             <label>First Name<sup class="req">*</sup></label>
                             <input type="text" id="fname" name="fname" class="input" value="<?php echo $fname; ?>" autocomplete="off">
-                        </div>
-                        <div class="col-12 col-md-6">
+                        </div> 
+                        <div class="col-12 col-md-6 mt">
                             <label>Last Name<sup class="req">*</sup></label>
                             <input type="text" id="lname" name="lname" class="input" value="<?php echo $lname; ?>" autocomplete="off">
                         </div>
@@ -209,7 +209,7 @@ if (isset($_POST['reguser-btn'])) {
                             <label>Email ID<sup class="req">*</sup></label>
                             <input type="email" id="emailid" name="emailid" class="input" value="<?php echo $emailid; ?>" autocomplete="off">
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 mt">
                             <label>Phone No.<sup class="req">*</sup></label>
                             <input type="number" id="mobile" name="mobile" class="input" value="<?php echo $mobile; ?>" autocomplete="off" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
                         </div>
@@ -219,7 +219,7 @@ if (isset($_POST['reguser-btn'])) {
                             <label>State Medical Council<sup class="req">*</sup></label>
                             <input type="text" id="pincode" name="pincode" class="input" value="<?php echo $pincode; ?>" autocomplete="off" maxlength="10">
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 mt">
                             <label>State Medical Register Number<sup class="req">*</sup></label>
                             <input type="text" id="specialty" name="specialty" class="input" value="<?php echo $specialty; ?>" autocomplete="off" maxlength="10" oninput="">
                         </div>

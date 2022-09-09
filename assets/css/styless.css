@@ -1380,12 +1380,6 @@ input[type=number] {
 
 
 
-
-
-
-
-
-
 #content #audiAgenda,
 #content #ask-ques,
 #content #take-poll {
@@ -2271,6 +2265,8 @@ ul.popuplist li i{
     #content #header-menu a{
         font-size: 0.6em;
     }
+
+   
 }
 @media only screen and  (max-width: 600px) { 
     #content #bottom-menu{
@@ -2282,6 +2278,9 @@ ul.popuplist li i{
     }
     #content #bottom-menu #helpline{
         right:0px !important;
+    }
+    .mt{
+        margin-top: 1rem;
     }
 }
 

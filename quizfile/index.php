@@ -251,7 +251,7 @@ $curr_room = 'pretest_module1';
         margin: 15px 0;
         display: flex;
         justify-content: center;
-        font-size: 1rem;
+        font-size: 3rem;
         font-weight: 600;
     }
 
@@ -314,6 +314,10 @@ $curr_room = 'pretest_module1';
 
 
     @media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
+
+        h3{
+            font-size:4vmin;
+        }
 
         /* For portrait layouts only */
         .quiz_box .quiz_question h1 {
