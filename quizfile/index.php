@@ -79,7 +79,12 @@ $curr_room = 'pretest_module1';
     margin-top: 10px;
     /* box-shadow: 15px 15px 24px #5f7197; */
     }
-
+    .result_box {
+   
+    width: 398px;
+    height: 216px;
+ 
+}
     @media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
         .btn {
             font-size: 4vmin;
@@ -109,7 +114,20 @@ $curr_room = 'pretest_module1';
             font-size:3vmin;
             font-weight:bold;
         }
+
+        .result_box{
+   
+   height: 20%;
+  
+    width: 860px;
+   
+}
+        
     }
+
+ 
+
+
 </style>
 <?php
 

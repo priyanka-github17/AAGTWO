@@ -16,14 +16,130 @@ $curr_room = 'posttest_module1';
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style1.css">
-
     <style>
-        @media only screen and (min-device-width: 319px) and (max-device-width: 425px){
+    /* .score{
+    display: inline;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tiro+Bangla&display=swap');
+     :root {
+        /* --body-bg: #d99e55;
+        ; */
+        --start_quiz-c: #1d9eab;
+        --white: rgba(255, 255, 255, 0.4);
+        --bg-button: #e0e0e0;
+        /* --right: #87e487;
+        --wrong: #f19a9a; */
+        --right: #e0e0e0;
+        --wrong: #1d9eab;
+    }
+    
+
+.btn {
+        padding: 7px 15px;
+        border-radius: 50px;
+        /* background: var(--start_quiz-c); */
+        background: #155091;
+        /* color: var(--white); */
+        font-size: 2vmin;
+        cursor: pointer;
+        color: white;
+
+        width: 100%;
+        /* margin-right: 77px; */
+
+    }
+
+    .btn-sm{
+        width:45%;
+       
+    }
+
+    .padding{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+
+    .btn:hover {
+        background-color: #4c93ba !important;
+    }
+
+    .btn1 {
+        padding: 7px 15px;
+        border-radius: 50px;
+        /* background: var(--start_quiz-c); */
+        background: #155091;
+        /* color: var(--white); */
+        font-size: 1rem;
+        cursor: pointer;
+        color: white;
+        width: 100%;
+        margin-right: 0px;
+
+
+    }
+
+    .btn2 {
+        padding: 20px 24px;
+    /* padding: 16px 30px; */
+    /* padding: 7px 15px; */
+    border-radius: 5px;
+    /* background: var(--start_quiz-c); */
+    background: #d61a5e;
+    /* color: var(--white); */
+    /* font-size: 3.4vmin; */
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: white;
+    /* width: 350px; */
+    text-transform: uppercase;
+    margin-top: 10px;
+    /* box-shadow: 15px 15px 24px #5f7197; */
+    }
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
+        .btn {
+            font-size: 4vmin;
+    font-weight: bold;
+    /* width: 40%; */
+        }
+
+        h3{
+            font-size: 3.75rem;
+        }
+
+        .btn2 {
+            padding: 30px 30px;
+    /* padding: 7px 15px; */
+    border-radius: 9px;
+    /* background: var(--start_quiz-c); */
+    background: #d61a5e;
+    /* color: var(--white); */
+    font-size: 3vmin;
+    cursor: pointer;
+    color: white;
+    width: 170px;
+    margin-top: 10px;
+    text-transform: uppercase;
+        }
+        .btn{
+            font-size:3vmin;
+            font-weight:bold;
+        }
+        .btn1{
+    font-size:3.5vmin;
+}
+
 .dropdown:checked + label, .dropdown:not(:checked) + label {
     height: 11vmin;
     width: 28rem;
-}}
-    </style>
+}
+
+    }
+</style>
+  
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <title>Integrace</title>
@@ -110,11 +226,25 @@ $curr_room = 'posttest_module1';
         <div class="options"></div>
     </div>
 
-    <footer>
+    <!-- <footer>
         <div class="question_no"></div>
         <div class="buttons">
             <button class="btn" id="next">Next</button>
         </div>
+    </footer> -->
+
+    <footer>
+       
+            <div class="col-md-6 padding">
+        
+        <div class="question_no "></div>
+        </div>
+        <div class="col-md-6 text-right padding">
+        <div class="buttons">
+            <button class="btn btn-sm" id="next">Next</button>
+            </div>
+        </div>
+       
     </footer>
 </section>
 
@@ -124,13 +254,13 @@ $curr_room = 'posttest_module1';
     <!-- <button id="replay" class="btn1">Re-Take Assessment</button><br>
     <a href="../module21.php" id="module"><button  class="btn mt-3">Re-Watch Module 1</button></a>  -->
 
-     <button id="replay" class="btn1 mt-3">Re-Take Assessment</button>
-    <a href="../module21.php" id="module"><button  class="btn1 mt-3">Re-Watch Module 1</button></a> 
+     <button id="replay" class="btn1 w-4 mt-3">Re-Take Assessment</button>
+    <a href="../module21.php" id="module"><button  class="btn1 w-4 mt-3">Re-Watch Module 1</button></a> 
  <br>
- <a href="../quizfile/pretest2.php" id="module1"><button  class="btn2 mt-3">Module 2 - Physiology of Conception</button></a> 
+ <a href="../quizfile/pretest2.php" id="module1"><button  class="btn1 mt-3">Module 2 - Physiology of Conception</button></a> 
  <!-- <a href="https://coact.live/AllAboutGestation/rateing/" id=""><button  class="btn2 mt-3">Feedback</button></a>  -->
  <div id="review_content"></div>
- <button type="button" name="add_review" id="add_review" class="btn2 btn-primary">Feedback</button>
+ <button type="button" name="add_review" id="add_review" class="btn1 btn-primary mt-3">Feedback</button>
 
  
 <div id="review_modal" class="modal" tabindex="-1" role="dialog">
@@ -164,7 +294,7 @@ $curr_room = 'posttest_module1';
   	</div>
 </div>
 
-<a href="https://coact.live/AllAboutGestation/lobby.php"  id="module1"><button  class="btn1 mt-3">Home</button></a> 
+<a href="https://coact.live/AllAboutGestation/lobby.php"  id="module1"><button  class="btn1 mt-3 w-4">Home</button></a> 
 </article>
 
 <script>

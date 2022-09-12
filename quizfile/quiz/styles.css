@@ -104,24 +104,7 @@
         border-right: 4px solid #155091; */
     }
 
-    /* quiz box  */
-    .btn2 {
-        padding: 20px 24px;
-    /* padding: 16px 30px; */
-    /* padding: 7px 15px; */
-    border-radius: 5px;
-    /* background: var(--start_quiz-c); */
-    background: #d61a5e;
-    /* color: var(--white); */
-    /* font-size: 3.4vmin; */
-    font-size: 1.4rem;
-    cursor: pointer;
-    color: white;
-    /* width: 350px; */
-    text-transform: uppercase;
-    margin-top: 10px;
-    /* box-shadow: 15px 15px 24px #5f7197; */
-    }
+ 
 
     .quiz_container {
         border-radius: 20px;
