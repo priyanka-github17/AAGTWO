@@ -6,14 +6,14 @@ class DataSource
 {
 
    const DBHOST = 'localhost';
-    // const USERNAME = 'root';
-    // const PASSWORD = '';
+    const USERNAME = 'root';
+    const PASSWORD = '';
     // const DATABASENAME = 'boot_live2021';
     // const DBPORT = '3306';
 
    // const DBHOST = 'localhost';
-    const USERNAME = 'coacteh9_coact';
-    const PASSWORD = 'Coact@2020#';
+    // const USERNAME = 'coacteh9_coact';
+    // const PASSWORD = 'Coact@2020#';
     const DATABASENAME = 'aag';
     const DBPORT = '3306';
 

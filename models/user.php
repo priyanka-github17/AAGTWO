@@ -18,6 +18,7 @@ class User
   private $topic_interest;
   private $updates;
   private $curr_room;
+  private $education;
   private $specialty;
   private $table = 'tbl_users';
   private $logintable = 'tbl_user_logins';
@@ -103,9 +104,9 @@ class User
  
       $this->user_id = bin2hex(random_bytes(32));
       $reg_date   = date('Y/m/d H:i:s');
-      $query = 'INSERT INTO ' . $this->table . '(userid, title, first_name, last_name, emailid, phone_num, country, state, city, pincode, verified, specialty, updates, reg_date) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)';
+      $query = 'INSERT INTO ' . $this->table . '(userid, title, first_name, last_name, emailid, phone_num, country, state, city, pincode, verified, specialty, education,updates, reg_date) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)';
       //  print_r($query);exit;
-      $paramType = 'ssssssssssssss';
+      $paramType = 'sssssssssssssss';
       $paramValue = array(
         $this->user_id,
         $this->title,
@@ -119,6 +120,7 @@ class User
         $this->pincode,
         $this->verified,
         $this->specialty,
+        $this->education,
         $this->updates,
         $reg_date
       );

@@ -15,6 +15,7 @@ $state = 0;
 $city = 0;
 $topics = '';
 $specialty = '';
+$education = '';
 $updates = '';
 $app = '';
 
@@ -38,26 +39,29 @@ if (isset($_POST['reguser-btn'])) {
         $errors['mobile'] = 'Phone No. is required';
     }
     if (empty($_POST['pincode'])) {
-        $errors['pincode'] = 'PINCODE is required';
+        $errors['pincode'] = 'State Medical Council is required';
     }
     // if (empty($_POST['topics'])) {
     //     $errors['topics'] = 'TOPIC is required';
     // }
     if (empty($_POST['updates'])) {
-        $errors['updates'] = 'Tupdates is required';
+        $errors['updates'] = 'Name of the council is required';
     }
     if (empty($_POST['specialty'])) {
-        $errors['specialty'] = 'specialty is required';
+        $errors['specialty'] = 'State Medical Register Number is required';
     }
-    // if ($_POST['country'] == '0') {
-    //     $errors['country'] = 'Country is required';
-    // }
-    // if ($_POST['state'] == '0') {
-    //     $errors['state'] = 'State is required';
-    // }
-    // if ($_POST['city'] == '0') {
-    //     $errors['city'] = 'City is required';
-    // }
+    if (empty($_POST['education'])) {
+        $errors['education'] = 'reg no. is required';
+    }
+    if ($_POST['country'] == '0') {
+        $errors['country'] = 'Country is required';
+    }
+    if ($_POST['state'] == '0') {
+        $errors['state'] = 'State is required';
+    }
+    if ($_POST['city'] == '0') {
+        $errors['city'] = 'City is required';
+    }
 
 
     // $title = $_POST['title'];
@@ -69,19 +73,20 @@ if (isset($_POST['reguser-btn'])) {
     // $topics = $_POST['topics'];
     $updates = $_POST['updates'];
     $specialty = $_POST['specialty'];
+    $education = $_POST['education'];
 
     // if (isset($_POST['country'])) {
     //     $country = $_POST['country'];
     // }
-    // if (isset($_POST['country'])) {
-    //     $country = $_POST['country'];
-    // }
-    // if (isset($_POST['state'])) {
-    //     $state = $_POST['state'];
-    // }
-    // if (isset($_POST['city'])) {
-    //     $city = $_POST['city'];
-    // }
+    if (isset($_POST['country'])) {
+        $country = $_POST['country'];
+    }
+    if (isset($_POST['state'])) {
+        $state = $_POST['state'];
+    }
+    if (isset($_POST['city'])) {
+        $city = $_POST['city'];
+    }
 
 
     // if (isset($_POST['topic'])) {
@@ -115,6 +120,7 @@ if (isset($_POST['reguser-btn'])) {
         $newuser->__set('verified', $app);
         $newuser->__set('topic_interest', $topics);
         $newuser->__set('specialty', $specialty);
+        $newuser->__set('education', $education);
         $newuser->__set('updates', $updates);
 
         $add = $newuser->addUser();
@@ -135,6 +141,7 @@ if (isset($_POST['reguser-btn'])) {
             $topics = '';
             $updates = '';
             $specialty = '';
+            $education = '';
             $app = '';
             $topics = '';
             $updates = '';
@@ -239,6 +246,40 @@ if (isset($_POST['reguser-btn'])) {
                         <div class="col-12 col-md-6">
                             
                             </div>
+                    </div>
+
+                    <div class="row mt-3 mb-1">
+                        <div class="col-12 col-md-6">
+                            <label>Registation Number<sup class="req">*</sup></label>
+                            <input type="text" id="education" name="education" class="input" value="<?php echo $education; ?>" autocomplete="off" maxlength="10">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label>Country<sup class="req">*</sup></label>
+                            <div id="countries">
+                                <select class="input" id="country" name="country" onChange="updateState()">
+                                    <option>Select Country</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mt-3 mb-1">
+                        <div class="col-12 col-md-6">
+                            <label>State<sup class="req">*</sup></label>
+                            <div id="states">
+                                <select class="input" id="state" name="state" onChange="updateCity()">
+                                    <option value="0">Select State</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label>City<sup class="req">*</sup></label>
+                            <div id="cities">
+                                <select class="input" id="city" name="city">
+                                    <option value="0">Select City</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <div class="row mt-2 mb-3">
                         <div class="col-12 col-md-12">
