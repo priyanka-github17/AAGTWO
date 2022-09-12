@@ -319,7 +319,8 @@ nav {
    }
 
    .center{
-    font-size: 4vmin;
+    /* font-size: 4vmin; */
+    font-size: 3.5vmin;
 }
 
 .result_box{
