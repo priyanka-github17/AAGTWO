@@ -84,7 +84,11 @@ $curr_room = 'pretest_module1';
         .btn {
             font-size: 4vmin;
     font-weight: bold;
-    width: 40%;
+    /* width: 40%; */
+        }
+
+        h3{
+            font-size: 3.75rem;
         }
 
         .btn2 {

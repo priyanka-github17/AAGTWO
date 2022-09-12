@@ -314,7 +314,7 @@ text-transform: uppercase;
 }
 
    .score span {
-       font-size:3vmin;
+       font-size:5vmin;
    }
    .start #start_quiz {
     font-size: 4vmin;
