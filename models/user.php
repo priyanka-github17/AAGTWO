@@ -135,7 +135,7 @@ class User
 
         $mail->sendEmail();
 
-        $response = setResponse('success', 'You are registered succesfully for the BOOT International Live. Please check your email regarding instructions on how to login.');
+        $response = setResponse('success', 'You are registered succesfully for the All About Gestation. Please check your email regarding instructions on how to login.');
       } else {
        
            $response = setResponse('error', 'You cound not be registered. Please try again.');
