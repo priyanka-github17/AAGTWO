@@ -400,7 +400,7 @@
       $('#my-example').dataTable({
         "bProcessing": true,
         buttons: [
-    'copyHtml5', 'excelHtml5', 'pdfHtml5', 'csvHtml5'
+    'copyHtml5', 'excelHtml5', 'pdfHtml5', 'csvHtml5', 'print'
   ],
    dom: 'Bfrtip',
         "sAjaxSource": "get.php",
