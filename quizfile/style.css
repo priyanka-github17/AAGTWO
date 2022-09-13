@@ -265,8 +265,21 @@ nav {
    font-size: larger;
 }
 
+/* .modal{
+    top:-28px;
+    bottom:-28px;
+} */
+/* .modal-open .modal{
+    overflow-x: hidden;
+    overflow-y: hidden;
+} */
 
-
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 500px;
+    margin: 0 auto;
+}
+}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 425px){
      /* For portrait layouts only */
@@ -333,4 +346,28 @@ nav {
     font-size:3.5vmin;
 }
 
+
+.modal-content{
+    width:171%;
+    height: 100%;
+}
+.text-field{
+    font-size: 4vmin;
+}
+.modal-title{
+    font-size: 5vmin;
+}
+
+.star{
+    font-size: 7vmin;
+}
+
+.close{
+    font-size: 3.5rem;
+}
+
+.modal-dialog{
+    right: 175px;
+    bottom: 23px;
+}
    }
