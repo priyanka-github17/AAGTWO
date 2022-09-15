@@ -72,7 +72,7 @@ if (isset($_POST['reguser-btn'])) {
     $sql = "SELECT * FROM tbl_users WHERE emailid='$email' LIMIT 1";
     $result = mysqli_query($link, $sql);
     if (mysqli_affected_rows($link) > 0) {
-        $errors['email'] = "You are already registereds.";
+        $errors['email'] = "You are already registered.";
     }
     //echo mysqli_affected_rows($link);
 

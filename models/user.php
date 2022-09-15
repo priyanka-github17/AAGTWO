@@ -73,6 +73,18 @@ class User
     $status = $this->ds->select($query, $paramType, $paramValue);
     return $status;
   }
+
+  private function getUserByNumber()
+  {
+    $query = 'Select userid, logout_date from ' . $this->table . ' where education=?';
+    $paramType = 's';
+    $paramValue = array(
+      $this->emailid
+    );
+
+    $status = $this->ds->select($query, $paramType, $paramValue);
+    return $status;
+  }
   public function getUserCount()
   {
     $query = 'Select id from ' . $this->table . '';
@@ -284,7 +296,7 @@ class User
 
   public function userLogin1()
   {
-    $status = $this->getUserByEmail();
+    $status = $this->getUserByNumber();
     // 
     if (empty($status)) {
       $response = setResponse('error', 'You are not registered.');

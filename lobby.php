@@ -269,7 +269,7 @@ if (isset($_POST['loginuser-btn'])) {
                                             </ul>
                                         </div>
                                         <?php endif; ?>
-                                        <input type="text" name="emailid" id="emailid" class="w3-input w3-border w3-margin-bottom" placeholder="Enter Registered Email ID" value="<?= $emailid?>">
+                                        <input type="text" name="emailid" id="emailid" class="w3-input w3-border w3-margin-bottom" placeholder="Enter Registered Number" value="<?= $emailid?>">
                                         <!-- <label><b>Password</b></label>
                                         <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required> -->
                                         <!-- <button class="w3-button w3-block w3-blue w3-section w3-padding" id="formsubmit" id="btnLogin" type="submit">Submit and Continue</button> -->
