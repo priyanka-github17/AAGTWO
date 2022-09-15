@@ -33,11 +33,12 @@ $curr_room = 'posttest_module1';
         --right: #e0e0e0;
         --wrong: #1d9eab;
     }
+.modal-header h5{
+    color:#d61a5e;
+    font-weight: bold;
 
-    .modal-header h5{
-           color: #d61a5e;
-           font-weight: bold;
-    }
+}
+
 .btn {
         padding: 7px 15px;
         border-radius: 50px;
@@ -101,8 +102,6 @@ $curr_room = 'posttest_module1';
     margin-top: 10px;
     /* box-shadow: 15px 15px 24px #5f7197; */
     }
-
-    
 
     @media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
         .btn {
@@ -555,8 +554,6 @@ alert("Sucessfully complited module 1");
 
 
 </script>
-
-
 <script>
 
 $(document).ready(function(){
@@ -564,18 +561,11 @@ $(document).ready(function(){
 	var rating_data = 0;
 
     $('#add_review').click(function(){
-        $('#review_modal').slideDown('500');
+        $('#review_modal').slideDown('slow');
         $('#review_modal').modal('show');
         
 
-
     });
-
-//     $('.close').click(function(){
-
-// $('#review_modal').fadeOut(slow);
-
-// });
 
     $(document).on('mouseenter', '.submit_star', function(){
 
@@ -643,9 +633,8 @@ $(document).ready(function(){
                 data:{rating_data:rating_data, user_name:user_name, user_review:user_review},
                 success:function(data)
                 {
-                    
-                    $('#review_modal').FadeOut('slow');
                     $('#review_modal').modal('hide');
+                    $('#review_modal').slideUp('slow');
 
                     load_rating_data();
 
