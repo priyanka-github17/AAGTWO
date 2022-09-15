@@ -16,6 +16,7 @@ $curr_room = 'posttest_module1';
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.scss">
     <style>
     /* .score{
     display: inline;
@@ -32,8 +33,11 @@ $curr_room = 'posttest_module1';
         --right: #e0e0e0;
         --wrong: #1d9eab;
     }
-    
 
+    .modal-header h5{
+           color: #d61a5e;
+           font-weight: bold;
+    }
 .btn {
         padding: 7px 15px;
         border-radius: 50px;
@@ -97,6 +101,8 @@ $curr_room = 'posttest_module1';
     margin-top: 10px;
     /* box-shadow: 15px 15px 24px #5f7197; */
     }
+
+    
 
     @media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
         .btn {
@@ -259,7 +265,13 @@ $curr_room = 'posttest_module1';
  <a href="../quizfile/pretest2.php" id="module1"><button  class="btn1 mt-3">Module 2 - Physiology of Conception</button></a> 
  <!-- <a href="https://coact.live/AllAboutGestation/rateing/" id=""><button  class="btn2 mt-3">Feedback</button></a>  -->
  <div id="review_content"></div>
- <button type="button" name="add_review" id="add_review" class="btn1 btn-primary mt-3">Feedback</button>
+
+
+ 
+ <button type="button" name="add_review" id="add_review" class="btn1 btn-primary mt-3 button">Feedback</button>
+ 
+
+
 
  
 <div id="review_modal" class="modal" tabindex="-1" role="dialog">
@@ -543,6 +555,8 @@ alert("Sucessfully complited module 1");
 
 
 </script>
+
+
 <script>
 
 $(document).ready(function(){
@@ -550,10 +564,18 @@ $(document).ready(function(){
 	var rating_data = 0;
 
     $('#add_review').click(function(){
-
+        $('#review_modal').slideDown('500');
         $('#review_modal').modal('show');
+        
+
 
     });
+
+//     $('.close').click(function(){
+
+// $('#review_modal').fadeOut(slow);
+
+// });
 
     $(document).on('mouseenter', '.submit_star', function(){
 
@@ -621,6 +643,8 @@ $(document).ready(function(){
                 data:{rating_data:rating_data, user_name:user_name, user_review:user_review},
                 success:function(data)
                 {
+                    
+                    $('#review_modal').FadeOut('slow');
                     $('#review_modal').modal('hide');
 
                     load_rating_data();
@@ -735,7 +759,18 @@ $(document).ready(function(){
 });
 
 </script>
+<script>
+    $('.button').click(function(){
+  var buttonId = $(this).attr('id');
+  $('#modal-container').removeAttr('class').addClass(buttonId);
+  $('body').addClass('modal-active');
+})
 
+$('#modal-container').click(function(){
+  $(this).addClass('out');
+  $('body').removeClass('modal-active');
+});
+</script>
 <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/mag-popup.js"></script>

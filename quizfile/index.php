@@ -11,12 +11,17 @@ $curr_room = 'pretest_module1';
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="style1.css">
-<link rel="stylesheet" href="styles.css">
+<!-- <link rel="stylesheet" href="styles.css"> -->
+<link rel="stylesheet" href="style.scss">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+
 <style>
     /* .score{
     display: inline;
@@ -186,7 +191,7 @@ $curr_room = 'pretest_module1';
 		  	<input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
 		  	<label class="for-dropdown-sub" for="dropdown-sub">Module 1 <i class="fa fa-plus"></i></label>
 	  		<div class="section-dropdown-sub"> 
-	  			<a href="#" class="a" id="start_quiz">Pre-test <i class="fa fa-arrow-right"></i></a>
+	  			<a href="#modal" class="a modal-open" id="start_quiz">Pre-test <i class="fa fa-arrow-right"></i></a>
 	  			 <a href="../module1.php"  class="a" >Video <i class="fa fa-arrow-right"></i></a> <!--href="../module1.php" onclick="Redirectmod1()"-->
 				 <a href="posttest1.php" class="a"  >Post-test <i class="fa fa-arrow-right"></i></a>   <!--href="posttest1.php" onclick="Redirectmod11()"-->
 	  		</div>
@@ -229,6 +234,16 @@ $curr_room = 'pretest_module1';
 	  		</div> -->
   			<!-- <a href="#">Dropdown 2 <i class="fa fa-arrow-right"></i></a>
   			<a href="#">Dropdown 2 <i class="fa fa-arrow-right"></i></a> -->
+
+              <div class="modal" id="modal">
+  <div class="modal-content">
+    <a href="#" class="modal-close" title="Close Modal">X</a>
+    <h3>Modal Title</h3>
+    <div class="modal-area">
+      <p>Modal Content Here</p>
+    </div>
+  </div>
+</div>
   		</div>
           <a href="../lobby.php" class="float-right" ><button  class="btn2 mt-3 ml-3"><i class="fa-solid fa-house"></i></button></a>
   	</div>
@@ -798,6 +813,7 @@ $curr_room = 'pretest_module1';
 
 
                                     <!-- </script> -->
+                                   
 <?php require_once "scripts.php" ?>
 <?php require_once "../exhib-script.php" ?>
 

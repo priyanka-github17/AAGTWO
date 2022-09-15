@@ -225,7 +225,45 @@ if (isset($_POST['reguser-btn'])) {
                             <input type="number" id="mobile" name="mobile" class="input" value="<?php echo $mobile; ?>" autocomplete="off" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
                         </div>
                     </div>
+                
+
                     <div class="row mt-3 mb-1">
+                        <div class="col-12 col-md-6">
+                            <label>Registation Number<sup class="req">*</sup></label>
+                            <input type="text" id="education" name="education" class="input" value="<?php echo $education; ?>" autocomplete="off" maxlength="10">
+                        </div>
+                        <div class="col-12 col-md-6 mt">
+                            <label>Country<sup class="req">*</sup></label>
+                            <div id="countries">
+                                <select class="input" id="country" name="country" onChange="updateState()">
+                                    <option>Select Country</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row mt-3 mb-1">
+                        <div class="col-12 col-md-6">
+                            <label>State<sup class="req">*</sup></label>
+                            <div id="states">
+                                <select class="input" id="state" name="state" onChange="updateCity()">
+                                    <option value="0">Select State</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mt">
+                            <label>City<sup class="req">*</sup></label>
+                            <div id="cities">
+                                <select class="input" id="city" name="city">
+                                    <option value="0">Select City</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div class="row mt-3 mb-1">
+                        
                         <div class="col-12 col-md-6">
                             <label>State Medical Council<sup class="req">*</sup></label>
                             <input type="text" id="pincode" name="pincode" class="input" value="<?php echo $pincode; ?>" autocomplete="off" maxlength="10">
@@ -248,39 +286,6 @@ if (isset($_POST['reguser-btn'])) {
                             </div>
                     </div>
 
-                    <div class="row mt-3 mb-1">
-                        <div class="col-12 col-md-6">
-                            <label>Registation Number<sup class="req">*</sup></label>
-                            <input type="text" id="education" name="education" class="input" value="<?php echo $education; ?>" autocomplete="off" maxlength="10">
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <label>Country<sup class="req">*</sup></label>
-                            <div id="countries">
-                                <select class="input" id="country" name="country" onChange="updateState()">
-                                    <option>Select Country</option>
-                                </select>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row mt-3 mb-1">
-                        <div class="col-12 col-md-6">
-                            <label>State<sup class="req">*</sup></label>
-                            <div id="states">
-                                <select class="input" id="state" name="state" onChange="updateCity()">
-                                    <option value="0">Select State</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <label>City<sup class="req">*</sup></label>
-                            <div id="cities">
-                                <select class="input" id="city" name="city">
-                                    <option value="0">Select City</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
                     <div class="row mt-2 mb-3">
                         <div class="col-12 col-md-12">
                             <!-- <small><sup class="req">*</sup> denotes mandatory fields.</small><br><br> -->
