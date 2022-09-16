@@ -229,7 +229,7 @@ if (isset($_POST['reguser-btn'])) {
 
                     <div class="row mt-3 mb-1">
                         <div class="col-12 col-md-6">
-                            <label>Registation Number<sup class="req">*</sup></label>
+                            <label>Registration Number<sup class="req">*</sup></label>
                             <input type="text" id="education" name="education" class="input" value="<?php echo $education; ?>" autocomplete="off" maxlength="10">
                         </div>
                         <div class="col-12 col-md-6 mt">

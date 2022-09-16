@@ -965,7 +965,7 @@ $(document).ready(function(){
 
         if(user_name == '' || user_review == '')
         {
-            alert("Please Fill Both Field");
+            alert("Please Fill Both The Fields");
             return false;
         }
         else
